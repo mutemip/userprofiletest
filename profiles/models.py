@@ -13,7 +13,7 @@ class Profile(models.Model):
 
 
 class ProfileStatus(models.Model):
-    userprofile = models.ForeignKey(Profile, on_delete=models.CASCADE)
+    user_profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
     status_content = models.CharField(max_length=255)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
