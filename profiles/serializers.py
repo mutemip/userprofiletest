@@ -11,7 +11,7 @@ class ProfileSerialiser(serializers.ModelSerializer):
         fields = "__all__"
 
 
-class AvatarSerializer(serializers.ModelSerializer):
+class ProfileAvatarSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
         fields = ("avartar", )
