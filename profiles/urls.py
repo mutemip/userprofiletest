@@ -3,5 +3,5 @@ from .views import ProfileListAPIView
 
 
 urlpatterns = [
-    path('profile/', ProfileListAPIView.as_view()),
+    path('profiles/', ProfileListAPIView.as_view(), name="profiles-list"),
 ]
